@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>免费高危筛查｜可交互评审原型</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="review-shell">
+      <aside class="sidebar" aria-label="页面导航">
+        <div class="project-brand">
+          <span class="brand-mark">FP</span>
+          <div>
+            <strong>免费高危筛查</strong>
+            <span>可交互评审原型</span>
+          </div>
+        </div>
+        <nav id="page-nav"></nav>
+        <div class="legend">
+          <span><i class="dot dot-new"></i>本次新增/修改</span>
+          <span><i class="dot dot-old"></i>沿用现有链路</span>
+        </div>
+      </aside>
+
+      <section class="stage" aria-live="polite">
+        <header class="stage-header">
+          <div>
+            <p id="stage-kicker"></p>
+            <h1 id="stage-title"></h1>
+          </div>
+          <span class="prototype-badge">交互演示</span>
+        </header>
+        <div id="stage-content" class="stage-content"></div>
+      </section>
+
+      <aside class="notes" aria-label="页面说明">
+        <div class="notes-heading">
+          <span>修改点</span>
+          <small id="notes-page"></small>
+        </div>
+        <div id="notes-content" class="notes-content"></div>
+      </aside>
+    </main>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
